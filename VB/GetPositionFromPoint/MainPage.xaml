@@ -1,0 +1,22 @@
+﻿<UserControl 
+    x:Class="GetPositionFromPoint.MainPage" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:rich="clr-namespace:DevExpress.AgRichEdit.Extensions;assembly=DevExpress.AgRichEdit.v9.2.Extensions" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" 
+    d:DesignWidth="640" 
+    d:DesignHeight="480">
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <rich:RichEdit x:Name="richEdit" VerticalAlignment="Stretch" Grid.Row="0"></rich:RichEdit>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1">
+            <TextBlock  FontSize="18" Text="Clicked Letter: "/>
+            <TextBlock x:Name="tbClickedLetter" Foreground="Red" FontSize="18"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
